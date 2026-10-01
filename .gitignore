@@ -1,0 +1,7 @@
+card*.html
+make_qr.py
+qr.*
+headshot-800.jpg
+_*
+*.pdf
+!Jahdir-Cartagena-Rivers-Resume-OnePage.pdf

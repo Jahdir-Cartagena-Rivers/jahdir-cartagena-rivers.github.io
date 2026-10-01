@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jah'dir Cartagena-Rivers | Portfolio</title>
+<link rel="icon" href="img/headshot.jpg"><link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:title" content="Jah'dir Cartagena-Rivers"><meta property="og:description" content="Mechanical Engineering · Software · Research"><meta property="og:image" content="https://jahdir-rivers.github.io/img/headshot.jpg"><meta property="og:url" content="https://jahdir-rivers.github.io/">
+<meta name="description" content="Mechanical engineering student building computer vision, automation, and cross-platform software.">
+<style>
+:root{--bg:#0c0e12;--card:#14171d;--line:#242932;--fg:#eceef2;--mut:#98a0ac;--acc:#5aa9ff}
+@media(prefers-color-scheme:light){:root{--bg:#f5f6f8;--card:#fff;--line:#e2e5ea;--fg:#13161b;--mut:#5a6270;--acc:#0b5fc0}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 Inter,"Segoe UI",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:800px;margin:0 auto;padding:64px 24px 40px}
+header{padding-bottom:32px;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(2rem,6vw,2.8rem);line-height:1.1;margin:0;letter-spacing:-.02em}
+.hero{display:flex;align-items:center;gap:22px}.avatar{width:112px;height:112px;border-radius:50%;object-fit:cover;border:2px solid var(--line);flex:none}@media(max-width:520px){.hero{flex-direction:column;align-items:flex-start}}.role{color:var(--acc);font-weight:600;margin:.6rem 0 0}
+.lead{color:var(--mut);margin:1rem 0 1.4rem;max-width:60ch}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.links a{color:var(--fg);text-decoration:none;border:1px solid var(--line);background:var(--card);padding:6px 16px;border-radius:8px;font-size:.92rem;transition:.15s}
+.links a:hover{border-color:var(--acc);color:var(--acc)}
+h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.14em;color:var(--mut);margin:48px 0 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin-bottom:16px}
+.card h3{margin:0 0 2px;font-size:1.15rem}.meta{color:var(--mut);font-size:.88rem;margin-bottom:8px}
+.card ul{padding-left:1.1rem;margin:8px 0}.card p{margin:8px 0 0}
+.tags span{display:inline-block;font-size:.76rem;background:color-mix(in srgb,var(--acc) 12%,transparent);color:var(--acc);border-radius:99px;padding:2px 11px;margin:10px 6px 0 0}
+.card img{width:100%;border-radius:10px;border:1px solid var(--line);margin-top:14px;display:block}.skills{color:var(--mut)}.skills b{color:var(--fg);font-weight:600}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:var(--mut);font-size:.85rem}
+</style></head><body><main>
+<header><div class="hero"><img class="avatar" src="img/headshot.jpg" alt="Jah'dir Cartagena-Rivers" width="112" height="112"><div><h1>Jah'dir Cartagena‑Rivers</h1><p class="role">Mechanical Engineering · Software · Research</p></div></div>
+<p class="lead">Mechanical engineering student at Temple University (expected May 2030). I build computer vision, automation, and cross-platform software, and I do laboratory and environmental research.</p>
+<p class="links"><a href="mailto:Jancrivers@gmail.com">Email</a><a href="https://linkedin.com/in/jahdir-rivers">LinkedIn</a><a href="https://github.com/Jahdir-Rivers">GitHub</a><a href="Jahdir-Cartagena-Rivers-Resume-OnePage.pdf">Résumé (PDF)</a></p></header>
+
+<h2>Projects</h2>
+<div class="card"><h3>Multimodal Computer Vision Media Classification Pipeline</h3>
+<div class="meta">Lead Developer / ML Engineer · Aug 2025 – Present</div>
+<ul><li>Automated media classification in Python with PyTorch, CLIP embeddings, and OpenCV frame extraction.</li>
+<li>Weighted three-signal confidence fusion: CLIP visual similarity (30%), OCR watermark extraction (40%), fuzzy string matching (30%). A 0.90 threshold routes automatically; 50–89% goes to manual review.</li>
+<li>FastAPI and Streamlit dashboards with live logs, manual triage, and Plex REST API integration.</li></ul>
+<img src="img/cv-pipeline.png" alt="Diagram of the three-signal confidence fusion pipeline" loading="lazy"><div class="tags"><span>Python</span><span>PyTorch</span><span>CLIP</span><span>OpenCV</span><span>FastAPI</span><span>Streamlit</span></div></div>
+
+<div class="card"><h3>Gyromi</h3>
+<div class="meta">Creator and Lead Developer · May 2026 – Present</div>
+<ul><li>Open-source, cross-platform reading, listening, and video library for Windows and Android in Flutter, Dart, and Rust.</li>
+<li>Offline-first sync through the Google Drive REST API, with PBKDF2-HMAC-SHA256 credential hashing.</li></ul>
+<img src="img/gyromi-settings.png" alt="Gyromi settings screen showing Audiobookshelf, Stremio, tracking and security options" loading="lazy"><div class="tags"><span>Flutter</span><span>Dart</span><span>Rust</span><span>Apache-2.0</span></div></div>
+
+<div class="card"><h3>J1 Code</h3>
+<div class="meta">Creator and Maintainer · Sep 2026 – Present</div>
+<ul><li>Personal fork of the open-source T3 Code desktop app for AI coding agents, built in TypeScript on Electron with its own profiles, branding, and Windows packaging.</li>
+<li>Added cross-provider agent delegation through MCP tools: a lead agent can hand bounded tasks to workers on other providers and models, with nesting up to three levels, eight active workers, and deadlines.</li>
+<li>Built history import that merges saved Claude Code and Codex conversations, preserves compacted chats, and follows live external sessions.</li>
+<li>Added a Windows background host and tray so chats keep running when the window closes.</li></ul>
+<div class="tags"><span>TypeScript</span><span>Electron</span><span>React</span><span>MCP</span><span>SQLite</span><span>MIT</span></div></div>
+
+<div class="card"><h3>Automated Application Pipeline &amp; Browser Copilot</h3>
+<div class="meta">Creator and Lead Developer · July 2026 – Present · screenshots use demo data</div>
+<ul><li>Full-stack workflow automation in Python and React using Playwright to work through multi-step job applications, with human review gates before anything is submitted.</li>
+<li>IMAP email parser and WebSocket pipeline feeding a real-time Kanban board of interview invites and statuses.</li></ul>
+<img src="img/autoapply-board.png" alt="Application tracking Kanban board with demo data" loading="lazy"><img src="img/autoapply-jobs.png" alt="Unified job feed with demo data" loading="lazy"><div class="tags"><span>Python</span><span>React</span><span>Playwright</span><span>WebSockets</span></div></div>
+
+<h2>Research</h2>
+<div class="card"><h3>Fluorescent gold nanoclusters</h3>
+<div class="meta">West Chester University · Summer 2024</div>
+<p>Synthesized amino-acid-, protein-, and polymer-capped gold nanoclusters and studied their cellular interactions. Presented as a technical poster at the 2024 Eastern Analytical Symposium, Plainsboro, NJ.</p></div>
+<div class="card"><h3>Microbial colonization on Philadelphia public transit</h3>
+<div class="meta">Research presentation · Philadelphia Service Awards, 2026</div></div>
+
+<h2>Skills</h2>
+<p class="skills"><b>Languages</b> Python, Dart, Rust, Java<br><b>Frameworks</b> PyTorch, Hugging Face Transformers, OpenCV, FastAPI, Flutter, Playwright, React<br><b>Other</b> GIS, data analysis, laboratory techniques, OSHA 10 General Industry</p>
+<footer>Philadelphia, PA · Jancrivers@gmail.com</footer></main></body></html>
